@@ -1,0 +1,493 @@
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+
+
+/*Start Header Style*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100px;
+  background-color: #100066;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 3% 5px 3%;
+}
+.name {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  font-family: verdana;
+  text-decoration: none;
+}
+.header div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-img {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.nav-bar {
+  display: flex;
+  margin-right: 3%;
+}
+.nav-bar ul a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 50px;
+  padding: 7px 5px;
+  background-color: #100066;
+}
+.nav-bar ul a:hover{
+  color: #00abf0;
+  background-color: white;
+  color: #100066;
+  border-radius: 10px;
+  padding: 7px 5px;
+}
+.nav-bar ul .active-nav {
+  background-color: white;
+  color: #100066;
+  border-radius: 10px;
+  padding: 7px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Home Page Style*/
+.home-body {
+  background: linear-gradient(-90deg, #100066 65%, white 35%);
+}
+/*Start Flex-box-1 of section*/
+.flex-box-1 {
+  margin-top: 45px;
+  height: 550px;
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-box-1 img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-left: 50%;
+  background-color: white;
+  border: 20px solid white;
+}
+.home-content{
+  max-width: 600px;
+  color: white;
+  text-align: right;
+}
+.home-content h1{
+  font-size: 55px ;
+  line-height: 1.5;
+}
+.home-content h3{
+  font-size: 40px ;
+  color: transparent;
+/* ???*/
+-webkit-text-stroke: .3px white;
+background-image: linear-gradient(#00abf0, #00abf0);
+background-repeat: no-repeat;
+-webkit-background-clip: text;
+background-position: -300px 0;
+animation: animate-text 5s linear infinite normal;
+}
+/*??*/
+@keyframes animate-text{
+  0%,95%,100% {
+    background-position: -410px 0;
+  }
+  65%,85% {
+    background-position: 0 0;
+  }
+}
+.home-content p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.flex-box-2 {
+  margin-top: -150px;
+  height: 100px;
+  width: 100%;
+  padding: 0 5%;
+/*  background: red;*/
+display: flex;
+justify-content: right;
+align-items: center;
+}
+.home-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.home-links a{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+.home-links a:hover {
+  color: #4040f7;
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Our Services Page Style */
+.services-body {
+  background-color: blue;
+}
+.services-body section h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin-top: 50px;
+  font-weight: 300;
+}
+.services-container {         /*Container*/
+  width: 100%;
+  height: 500px;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-container .box-1 {        /*Box-1*/
+  height: 300px;
+  width: 225px;
+  background-color: white;
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
+.services-container .box-1:hover{
+  transform: rotatey(360deg);
+  transition: all 0.5s linear 0s;
+}
+.services-container .box-2 {        /*Box-2*/
+  height: 300px;
+  width: 225px;
+  background-color: white;
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
+.services-container .box-2:hover{
+  transform: rotatey(360deg);
+  transition: all 0.5s linear 0s;
+}
+.services-container .box-3 {         /*Box-3*/ 
+  height: 300px;
+  width: 225px;
+  background-color: white;
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
+.services-container .box-3:hover{
+  transform: rotatey(360deg);
+  transition: all 0.5s linear 0s;
+}
+.services-container .box-4 {          /*Box-4*/
+  height: 300px;
+  width: 225px;
+  background-color: white;
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
+.services-container .box-4:hover{
+  transform: rotatey(360deg);
+  transition: all 0.5s linear 0s;
+}
+
+/*Icons Img Style*/
+.services-img {
+  height: 100px;
+  width: 100px;
+  border: 10px blue solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: -49px;
+  background-color: white;
+}
+.services-img img {
+  height: 70px;
+  width: 70px;
+}
+.services-img img:hover{
+  transform: rotatey(360deg);
+  transition: all 0.5s linear 0s;
+}
+
+.services-container div h3 {
+  font-size: 25px;
+  text-align: center;
+  color: blue;
+  margin-top: 10px;
+}
+.services-container p {
+  color: blue;
+  text-align: justify;
+  margin: 0 10px;
+
+}
+.services-container p a {
+  font-size: 15px;
+  color: red;
+  text-decoration: underline 1px wavy red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact US Page  Style*/
+.contact-body {
+  background-color: blue;
+  margin-top: 60px;
+
+}
+.contact-section h1 {
+  color: white;
+  font-size: 50px;
+}
+.contact-form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form .box-1 {        /*Box-1*/
+  height: 350px;
+  width: 350px;
+  background-color: #e6e6e6;
+  padding: 20px 30px 20px 20px;
+  margin-right: 20px;
+  border-radius: 10px 50px 50px 10px;
+}
+.box-1 h3 {
+  font-size: 25px;
+  color: blue;
+  text-align: center;
+}  
+.contact-form .box-1 form input{
+  margin: 10px 0 10px -12px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+.contact-form .box-1 form textarea{
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  margin: 10px 0 10px -12px;
+}
+.box-1 button.submit{
+  color: white;
+  background-color: #5353ff;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 7px 0 0 96px;
+  border: none;;
+}
+.box-1 button.submit:hover {
+  background-color: blue;
+  color: white;
+}
+.contact-form .box-2 img {          /*Box-2*/
+  background-color: #cdcdcd;
+  height: 350px;
+  width: 350px;
+  margin-left: 20px;
+  border-radius: 50px 10px 10px 50px;
+}
+.contact-form img{
+  height: 350px;
+  width: 350px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Sign Up Page Style*/
+.sign-login-body {
+  background-color: blue;
+}
+.signup-box{
+  width: 360px;
+  height: 600px;
+  margin: auto;
+  background-color: white;
+  border-radius: 40px;
+  margin-top: 70px;
+}
+h1{
+  text-align: center;
+  padding: 15px;
+  padding-top: 20px;
+}
+form{
+  width: 300px;
+  margin-left: 20px;
+}
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+form input{
+  width: 100%;
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 8px;
+  outline: none;
+}
+input[type="submit"]{
+  width: 320px;
+  height: 35px;
+  margin-top: 15px;
+  background-color: #135cd1;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+p{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+}
+p a {
+  color: blue;
+}
+h6{
+  text-align: end;
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.p-2{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: -10px;
+}
+.p-2 a {
+  color: red;
+}
+.login-box{
+  width: 360px;
+  height: 320px;
+  margin: auto;
+  background-color: white;
+  border-radius: 40px;
+  margin-top: 70px;
+}
+
+
+/*this is the Css of Privacy Policy & Terms and Conditions page*/
+#body-2{
+  background-color: white;
+}
+#h-2{
+  font-size: 70px;
+  color: blue;
+}
+#p-3{
+  color: black;
+  font-size: 25px;
+}
+#done {
+  width: 70px;
+  height: 32px;
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 1000px;
+}
